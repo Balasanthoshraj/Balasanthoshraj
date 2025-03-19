@@ -4,9 +4,9 @@
         <meta name="viewport" content="width = device-width, initial-scale1.0">
         <style>
             body{
-                background-image: url('https://th.bing.com/th/id/OIP.7GCuUNmoLF0KNpR_BTm3NQHaEK?rs=1&pid=ImgDetMain');
+                background-image: url('https://th.bing.com/th/id/OIP.a6OIQT9heNprAmyeaWB_QgHaE8?rs=1&pid=ImgDetMain');
                 background-size: 100vw 100vh;
-                
+                background-attachment: fixed;
                 margin: 0;
             }
             h1{
@@ -16,43 +16,45 @@
                 padding: 2%;
                 margin: 3%;
             }
-            
+            ul {
+                list-style-type: none;
+                margin: 1%;
+                padding: 0;
+                overflow: hidden;
+                background-color:#04AA6D;
+                top: 0;
+                width: 100%;
+                position: -webkit-sticky;
+                position: sticky;
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: #111;
+              }
+              
+              .active {
+                background-color: #04AA6D;
+              }
                 
                 
-                ul {
-                  list-style-type: none;
-                  margin: 1%;
-                  padding: 0;
-                  overflow: hidden;
-                  background-color:#04AA6D;
-                  top: 0;
-                  width: 100%;
-                  position: -webkit-sticky;
-                  position: sticky;
-                }
                 
-                li {
-                  float: left;
-                }
-                
-                li a {
-                  display: block;
-                  color: white;
-                  text-align: center;
-                  padding: 14px 16px;
-                  text-decoration: none;
-                }
-                
-                li a:hover:not(.active) {
-                  background-color: #111;
-                }
-                
-                .active {
-                  background-color: #04AA6D;
-                }
             .container{
                 display: grid;
-                grid-template-columns: auto;
+                grid-template-columns: 60%;
+                row-gap: 25px;
+                justify-content: center;
 
             }
             p{
@@ -61,7 +63,7 @@
                 font-size: 30px;
 
             }
-            .image{
+            .items{
                 text-align: center;
                 transition: transform .5s;
                 
@@ -69,13 +71,13 @@
             }
             
             img {
-                    border: 1px solid #ddd;
+                    border: 5px ridge #ddd;
                     border-radius: 30px;
                     padding: 5px;
-                    width:70%
+                    width:500px;
                     
             }
-            .image:hover{
+            .items:hover{
                     transform: scale(1.25);
             }
                   
@@ -83,6 +85,14 @@
             
                 
         </style>
+        <script>
+            
+            let name = prompt('enter your name','name');
+            let coffee = prompt('enter number of coffee you want to buy',1);
+            let price = prompt('enter price per coffee',50);
+            let total = coffee*price;
+            alert(`hi! ${name}. your total cost is ${total}`);
+        </script>
     </head>
     <body>
         <h1>TECH FEST</h1>
@@ -93,9 +103,18 @@
 
         </ul>
         <div class="container">
-            <p>Technical</p>
-            <div class="image"><img src="https://th.bing.com/th/id/OIP.ME9B34em3uKcXhdht3BTbwHaEK?rs=1&pid=ImgDetMain"></div>
-            <div></div>
+            <div class="items"><p>Technical</p>
+            <div ><img src="https://th.bing.com/th/id/OIP.ME9B34em3uKcXhdht3BTbwHaEK?rs=1&pid=ImgDetMain"></div>
+            
+            </div>
+            <div class="items">
+            <p>Cultural</p>
+            <div><img src="https://th.bing.com/th/id/OIP._mB2w4EW6jNLRMIMCE9tCQHaHa?rs=1&pid=ImgDetMain"></div>
+            </div>
+            <div class="items">
+            <p>Sports</p>
+            <div><img src="https://wallpaperaccess.com/full/1624817.jpg"></div>
+            </div>
         </div>
     </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale1.0">
+        <style>
+            body{
+                background-image: url('https://th.bing.com/th/id/R.45b600aa606e03e470dec5f9adcd3248?rik=NxSsDRRowb8cGw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fngPEfyE.jpg&ehk=H8cSGsfjlgPQaG1%2f3Ozt2CphyeUbP7kRRn7Dc8mef9s%3d&risl=&pid=ImgRaw&r=0');
+                background-size: 100vw 100vh;
+                background-attachment: fixed;
+                
+                
+                
+            }
+            h1{
+                color: black;
+                text-align: center;
+                border: 6px ridge grey;
+                padding: 2%;
+                margin: 3%;
+                text-shadow: 0 0 20px white,0 0 20px white,0 0 20px white;
+                text-decoration: underline black double 2px;
+                
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 60%;
+                row-gap: 25px;
+                justify-content: center;
+
+            }
+            p{
+                color: antiquewhite;
+                text-align: center;
+                font-size: 30px;
+
+            }
+            .items{
+                text-align: center;
+                transition: transform .5s;
+                
+                
+            }
+            
+            img {
+                    border: 5px ridge #ddd;
+                    border-radius: 30px;
+                    padding: 5px;
+                    width:500px;
+                    
+                    
+            }
+            .items:hover{
+                    transform: scale(1.25);
+            }
+               
+        </style>
+        <script>
+            let name = prompt('enter your name','name');
+            let mark = prompt('enter your mark',0);
+            if(mark > 90){
+                alert(`hi ${name}!, your grade is A`);
+            }
+            if(mark >= 80 && mark <= 89 ){
+                alert(`hi ${name}!, your grade is B`);
+            }
+            if(mark >= 70 && mark <= 79 ){
+                alert(`hi ${name}!, your grade is C`);
+            }
+            if(mark >= 60 && mark <= 69 ){
+                alert(`hi ${name}!, your grade is D`);
+            }
+            if(mark < 60 ){
+                alert(`hi ${name}!, your grade is F`);
+                alert("you need improvment!");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>TECHNICAL</h1>
+        <div class="container">
+            <div class="items"><p>Hackathon</p>
+            <div ><img src="https://th.bing.com/th/id/OIP.jN_4Xro_W4e43PTiXp9HlAHaEK?rs=1&pid=ImgDetMain"></div>
+            
+            </div>
+            <div class="items">
+            <p>Tech quiz</p>
+            <div><img src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/3a790821-9401-4529-9a37-5c2943b52d8d"></div>
+            </div>
+            <div class="items">
+            <p>Projects</p>
+            <div><img src="https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdHN8ZW58MHx8MHx8&w=1000&q=80"></div>
+            </div>
+        </div>
+        
+    </body>
+</html>

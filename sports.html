@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width = device-width, initial-scale1.0">
+        <style>
+            body{
+                background-image: url('https://th.bing.com/th/id/OIP.rDVlMG1CXH3Ovkn8qhMoFwHaEK?rs=1&pid=ImgDetMain');
+                background-size: 100vw 100vh;
+                background-attachment: fixed;
+                
+                
+                
+            }
+            h1{
+                color: black;
+                text-align: center;
+                border: 6px ridge grey;
+                padding: 2%;
+                margin: 3%;
+                text-shadow: 0 0 20px white,0 0 20px white,0 0 20px white;
+                text-decoration: underline black double 2px;
+                
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 60%;
+                row-gap: 30px;
+                justify-content: center;
+
+            }
+            p{
+                color: antiquewhite;
+                text-align: center;
+                font-size: 30px;
+
+            }
+            .items{
+                text-align: center;
+                transition: transform .5s;
+                
+                
+            }
+            
+            img {
+                    border: 5px ridge #ddd;
+                    border-radius: 30px;
+                    padding: 5px;
+                    width:500px;
+                    
+                    
+            }
+            .items:hover{
+                    transform: scale(1.25);
+            }
+               
+        </style>
+        <script>
+            let name = prompt('enter your name','name');
+            let age = prompt('enter your age',0);
+            if(age < 12){
+                alert(`hi ${name}!, ticket price is ₹5`);
+            }
+            if(age >= 12 && age <= 60 ){
+                alert(`hi ${name}!, ticket price is ₹10`);
+            }
+            if(age > 60){
+                alert(`hi ${name}!, ticket price is ₹7`);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>SPORTS</h1>
+        <div class="container">
+            <div class="items"><p>Basketball</p>
+            <div ><img src="https://th.bing.com/th/id/OIP.mXtaDZBdqZ3ttQkKYvtTjAHaFo?rs=1&pid=ImgDetMain"></div>
+            
+            </div>
+            <div class="items">
+            <p>Table tennis</p>
+            <div><img src="https://th.bing.com/th/id/OIP.uFUIs4M9QxaemRU9y14N0AHaFN?rs=1&pid=ImgDetMain"></div>
+            </div>
+            <div class="items">
+            <p>chess</p>
+            <div><img src="https://images.pexels.com/photos/229576/pexels-photo-229576.jpeg?cs=srgb&dl=check-chess-chess-board-king-and-queen-229576.jpg&fm=jpg"></div>
+            </div>
+        </div>
+        
+    </body>
+</html>
