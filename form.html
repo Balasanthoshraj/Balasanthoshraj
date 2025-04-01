@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Personal Information Form</h2>
+        <form>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="number" name="age" placeholder="Enter your age" required>
+            <select name="activity" required>
+                <option value="" disabled selected>Select an activity</option>
+                <option value="technical">Technical</option>
+                <option value="cultural">Cultural</option>
+                <option value="sports">Sports</option>
+            </select>
+            <select name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
