@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+  <h1>Habit Tracker</h1>
+
+  <form id="habit-form">
+    <input type="text" id="habit-input" placeholder="New habit..." required />
+    <input type="number" id="time-input" placeholder="Time spent (min)" min="0" required />
+    <button type="submit">Add Habit</button>
+  </form>
+
+  <ul id="habit-list"></ul>
+
+  <div id="summary">
+    <h3>📊 Summary</h3>
+    <p><strong>Total Habits:</strong> <span id="total-count">0</span></p>
+    <p><strong>Completed:</strong> <span id="done-count">0</span></p>
+    <p><strong>Total Time (completed):</strong> <span id="done-time">0</span> minutes</p>
+  </div>
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
